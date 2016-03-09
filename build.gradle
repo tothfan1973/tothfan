@@ -1,0 +1,22 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+
+buildscript {
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
+    }
+}
+
+idea {
+
+    project {
+        jdkName = sourceCompatibility
+        languageLevel = sourceCompatibility
+    }
+
+}

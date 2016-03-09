@@ -1,0 +1,19 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to="ux">
+
+    <!-- Inherit the core Web Toolkit stuff.                  -->
+    <inherits name="com.sencha.gxt.ui.GXT"/>
+    <inherits name='com.google.gwt.user.User'/>
+
+    <!-- Specify the theme of the app                         -->
+    <inherits name="com.ux.client.theme.gray.gray"/>
+
+    <!-- Specify the app entry point class.                   -->
+    <entry-point class='com.ux.client.MainEntry'/>
+
+
+    <!-- Specify the app servlets.                   -->
+    <servlet path='/app' class='com.ux.server.AppFormServiceImpl'/>
+
+</module>

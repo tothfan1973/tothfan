@@ -1,0 +1,48 @@
+
+.border {
+    /*border: 1px solid borderColor !important;*/
+}
+
+.borderLeft {
+    border: none;
+    /*border-left: 1px solid borderColor !important;*/
+}
+
+.borderRight {
+    border: none;
+    /*border-right: 1px solid borderColor !important;*/
+}
+
+.borderTop {
+    border: none;
+    /*border-top: 1px solid borderColor !important;*/
+}
+
+.borderBottom {
+    border: none;
+    /*border-bottom: 1px solid borderColor !important;*/
+}
+
+.disabled {
+    background: #dddddd;
+}
+
+.label-text-color {
+    color: red;
+    width: 100px;
+    font-family: "Helvetica";
+    font-size: 14px;
+}
+
+.input-text {
+    width: 200px;
+    font-family: "Helvetica";
+    font-size: 14px;
+}
+
+.input-label {
+    width: 100px;
+    font-family: "Helvetica";
+    font-size: 14px;
+
+}

@@ -1,0 +1,45 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+apply plugin: 'gwt'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+
+dependencies {
+
+    compile group: 'com.intellij', name: 'annotations', version: '5.1'
+    compile group: 'com.sencha.gxt', name: 'gxt', version: '3.1.1'
+    compile group: 'com.google.gwt', name: 'gwt-dev', version: '2.7.0'
+    compile group: 'com.google.gwt', name: 'gwt-user', version: '2.7.0'
+    compile group: 'com.google.gwt', name: 'gwt-servlet', version: '2.7.0'
+    compile group: 'joda-time', name: 'joda-time', version: '2.3'
+
+    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.1.0.Final'
+    compile group: 'org.hsqldb', name: 'hsqldb', version:'2.3.3'
+    compile group: 'javax.ejb', name: 'ejb-api', version: '3.0'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+
+def gxtVersion = '3.1.1'
+
+gwt {
+    gwtVersion = project.properties.gwtVersion
+
+
+    modules 'com.ux.ux'
+
+    minHeapSize = "512M"
+    maxHeapSize = "1024M"
+
+    gwtDev {
+        startupUrl = "/"
+        debug = true
+        jvmArgs '-XX:MaxPermSize=512M'
+    }
+}

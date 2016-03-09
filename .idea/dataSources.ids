@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="TESTS" uuid="ec338a58-a4e5-442d-a8ad-943014294544">
+    <database-info product="HSQL Database Engine" version="2.3.2" jdbc-version="4.0" driver-name="HSQL Database Engine Driver" driver-version="2.3.2">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <schema name="PUBLIC" catalog="PUBLIC"/>
+    <table name="PERSON" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="ID" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
+      <column name="NAME" sqlType="VARCHAR" precision="25" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EMAIL" sqlType="VARCHAR" precision="25" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="USER" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="ID" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4"/>
+      <column name="NAME" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="USERNAME" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="SYS_PK_10093" columns="ID"/>
+    </table>
+  </data-source>
+</component>
